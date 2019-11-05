@@ -1,3 +1,5 @@
+# Author: Jiri Svab
+
 import pyautogui, sys
 
 for x in range(2): # run throught this program x times
