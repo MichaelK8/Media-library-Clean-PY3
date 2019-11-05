@@ -1,4 +1,10 @@
 # Author: Jiri Svab
+# screen resolution needed: width=2560, height=1440
+# dependencies: Python3, PyAutogui
+# notes: Taking the tasks "Move To" from HOME (alt+h) menu
+# notes: Browser zoom level needs to be 100%
+# notes: PyAutogui doesnt support dual monitors currently (21/10/19). 
+# notes: Nevertheless it is recommended to launch this program in separate screen.
 
 import pyautogui, sys
 
