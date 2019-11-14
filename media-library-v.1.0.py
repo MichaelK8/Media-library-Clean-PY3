@@ -19,6 +19,6 @@ for x in range(2): # run throught this program x times
     pyautogui.move(1315, 363) # move mouse to "Path:"
     pyautogui.click(button='left') # click on "Path:"
     pyautogui.hotkey('ctrl', 'a') # select all
-    pyautogui.typewrite('/sitecore/media library/uncategorized') # Write the path of uncatogorized folder
+    pyautogui.typewrite('/sitecore/media library/Images/LeicaGeosystems/Products/uncategorized-products') # Write the path of uncatogorized folder
     pyautogui.move(0, 90) # move mouse over button "Move"
     pyautogui.click(button='left') # click on "Move"
