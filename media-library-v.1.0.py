@@ -8,7 +8,7 @@
 
 import pyautogui, sys
 
-for x in range(10): # run throught this program x times
+for x in range(10): # run through this program x times
     pyautogui.PAUSE = 0.30 # make a pause between each instruction
     pyautogui.click( x=200, y=1285, clicks=2, interval=0.5, button='left') # starting location of mouse
     pyautogui.hotkey('alt', 'h') # opens HOME menu
