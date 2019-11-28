@@ -8,17 +8,16 @@
 
 import pyautogui, sys
 
-for x in range(2): # run throught this program x times
-    pyautogui.click( x=211, y=866, clicks=1, interval=1, button='left' ) # starting location of mouse
-    pyautogui.PAUSE = 1.50 # make a pause between each instruction
-    pyautogui.click( button='right' ) # open mouse submenu
-    pyautogui.move(40, 190) # move mouse to menu item "copying"
-    pyautogui.click(button='left') # click on "copying"
-    pyautogui.move(310, 33) # move mouse to submenu item "Move To"
-    pyautogui.click(button='left') # click on "Move To"
-    pyautogui.move(1315, 363) # move mouse to "Path:"
+for x in range(10): # run throught this program x times
+    pyautogui.PAUSE = 0.30 # make a pause between each instruction
+    pyautogui.click( x=200, y=1285, clicks=2, interval=0.5, button='left') # starting location of mouse
+    pyautogui.hotkey('alt', 'h') # opens HOME menu
+    pyautogui.moveTo(690, 360, 1, pyautogui.easeInOutQuad) # move mouse over "Move To" in HOME menu
+    pyautogui.click(button='left') # click mouse on "Move To" in HOME menu
+    pyautogui.moveTo(1834, 1127, duration=4.4, tween=pyautogui.easeInOutQuad) # move mouse to "Path:"
     pyautogui.click(button='left') # click on "Path:"
     pyautogui.hotkey('ctrl', 'a') # select all
     pyautogui.typewrite('/sitecore/media library/Images/LeicaGeosystems/Products/uncategorized-products') # Write the path of uncatogorized folder
-    pyautogui.move(0, 90) # move mouse over button "Move"
+    pyautogui.move(0, 90, 1, pyautogui.easeInOutQuad) # move mouse over button "Move"
     pyautogui.click(button='left') # click on "Move"
+    pyautogui.move(-190,0, duration=5.9)
